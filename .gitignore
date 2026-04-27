@@ -1,0 +1,5 @@
+gradio_tmp/
+uploads/
+gradio_uploads/
+__pycache__/
+*.log
