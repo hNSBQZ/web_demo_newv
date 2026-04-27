@@ -877,7 +877,6 @@ def introduction_markdown():
   <li>Each request is single-turn and does not send chat history.</li>
   <li>Streaming Mode: real-time response streaming.</li>
   <li>Thinking Mode: show model reasoning process in muted small text.</li>
-  <li>Few Shot tab: add in-context examples and generate in one request.</li>
 </ul>
 """
 
@@ -968,12 +967,10 @@ def build_demo():
 2. 图片每次最多 3 张，视频每次最多 1 个，图片和视频不能混发。
 3. 打开 Thinking Mode 后，会向 vLLM 传 `chat_template_kwargs.enable_thinking=true`。
 4. 打开 Streaming Mode 后，回复会边生成边显示，可以点击 Stop 中止当前输出。
-5. Few Shot 页可以先添加示例，再基于当前输入生成一次请求。
 
 示例动图链接：
 - [Chat with single or multiple images](http://thunlp.oss-cn-qingdao.aliyuncs.com/multi_modal/never_delete/m_bear2.gif)
 - [Chat with video](http://thunlp.oss-cn-qingdao.aliyuncs.com/multi_modal/never_delete/video2.gif)
-- [Few shot](http://thunlp.oss-cn-qingdao.aliyuncs.com/multi_modal/never_delete/fshot.gif)
 """
                 )
     return demo
